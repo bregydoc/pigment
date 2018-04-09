@@ -1,7 +1,7 @@
 name: pigment
 description: Useful and simple flutter color handler
 version: 0.1.0
-author: Bregy Malpartida
+author: Bregy Malpartida <bregy.malpartida@utec.edu.pe>
 homepage: https://github.com/bregydoc/pigment
 
 environment:
