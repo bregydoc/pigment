@@ -22,9 +22,7 @@ First, add `pigment` as a [dependency in your pubspec.yaml file](https://flutter
 It's very simple, pigment add a new useful method to Color class, this method is `Pigment.fromString()`.
 Also like Color, you can use `new Pigment()`.
 
-<p align="center">
-    <img src="pigment_use.png"/> 
-</p>
+<img src="pigment_use.png"/>
 
 ```dart
 Pigment.fromString()
