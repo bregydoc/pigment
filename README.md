@@ -1,6 +1,6 @@
 # Pigment
 
-A new flutter plugin project.
+A useful and simple plugin for use colors with Flutter
 
 ## Getting Started
 
