@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="pigment_logo.png"/> 
+    <img src="https://github.com/bregydoc/pigment/raw/master/pigment_logo.png"/> 
 </p>
 
 # Pigment
@@ -24,7 +24,7 @@ First, add `pigment` as a [dependency in your pubspec.yaml file](https://flutter
 It's very simple, pigment add a new useful method to Color class, this method is `Pigment.fromString()`.
 Also like Color, you can use `new Pigment()`.
 
-<img src="pigment_use.png"/>
+<img src="https://github.com/bregydoc/pigment/raw/master/pigment_use.png"/>
 
 ```dart
 Pigment.fromString()
