@@ -10,8 +10,10 @@ A simple but useful plugin for use colors with Flutter
 
 ## Features
 
-*   You can use string colors (like #01E19F) direct in flutter
-*   Pigment extends to Color dar:ui class, then you can use all methods of Color class
+-   You can use string colors (like #01E19F) direct in flutter
+-   Pigment extends to Color dar:ui class, then you can use all methods of Color class
+-   Pigment 1.0.1 can parse 'rgb()' (e.g. 'rgb(29, 123, 10)').
+-   Added CSS colors with default name, you can access from this with CSSColor.\* (e.g. `Pigment.fromCSSColor(CSSColor.lightsalmon)`) or directly with `Pigment.fromString('lightsalmon')`.
 
 ## Installation
 
@@ -75,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
               new Text('Pigment is cool',
                   style: new TextStyle(color: Pigment.fromString("#4A48D2"))),
               new Text('Pigment is cool',
-                  style: new TextStyle(color: Pigment.fromString("#FFC367"))),
+                  style: new TextStyle(color: Pigment.fromString("rgb(253, 196, 86)"))),
             ],
           ),
         ));
