@@ -4,7 +4,7 @@
 
 # Pigment
 
-[![pub package](https://img.shields.io/pub/v/pigment.svg)](https://pub.dartlang.org/packages/camera)
+[![pub package](https://img.shields.io/pub/v/pigment.svg)](https://pub.dartlang.org/packages/pigment)
 
 A simple but useful plugin for use colors with Flutter
 
@@ -33,7 +33,7 @@ new Pigment()
 
 ## Example
 
-Here is a small example flutter app displaying a full screen camera preview.
+Here is a small example of the classic and simple pigment use.
 
 ```dart
 import 'package:flutter/material.dart';
