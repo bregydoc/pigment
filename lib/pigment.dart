@@ -18,7 +18,7 @@ class Pigment extends Color {
     return true;
   }
 
-  static Color _getRGBColorFromString(String string) {
+  static Color? _getRGBColorFromString(String string) {
     string = string.replaceAll(" ", ""); // pseudo-trimming
     if (string.startsWith("rgb(") && string.endsWith(")")) {
       // Correct
@@ -39,12 +39,12 @@ class Pigment extends Color {
   static Color _getColor(String color) {
     color = color.trim();
 
-    Color rgbColor = _getRGBColorFromString(color);
+    Color? rgbColor = _getRGBColorFromString(color);
     if (rgbColor != null) {
       return rgbColor;
     }
 
-    Color finalColor;
+    Color? finalColor;
     if (_hasCorrectHexPattern(color)) {
       color = color.replaceAll("#", "");
       int size = color.length;
@@ -72,7 +72,7 @@ class Pigment extends Color {
       return finalColor;
     }
 
-    String namedColor = cssColors[color];
+    String? namedColor = cssColors[color];
     if (namedColor != null && namedColor != "") {
       namedColor = namedColor.replaceAll("#", "");
       int value = int.parse(namedColor, radix: 16);
