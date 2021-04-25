@@ -1,11 +1,11 @@
 name: pigment
 description: Useful and simple flutter color handler
-version: 1.0.3
-author: Bregy Malpartida <bregy.malpartida@utec.edu.pe>
+version: 1.0.4
+author: Bregy Malpartida <bregy@minsky.cc>
 homepage: https://github.com/bregydoc/pigment
 
 environment:
-    sdk: '>=2.12.0 <3.0.0'
+    sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
     flutter:
@@ -14,7 +14,6 @@ dependencies:
 dev_dependencies:
     flutter_test:
         sdk: flutter
-
 # flutter:
 #   plugin:
 #     androidPackage: com.bregy.pigment
