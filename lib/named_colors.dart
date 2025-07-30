@@ -1,3 +1,5 @@
+part of 'pigment.dart';
+
 const cssColors = {
   'lightsalmon': '#FFA07A',
   'salmon': '#FA8072',
