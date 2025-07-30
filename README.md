@@ -1,86 +1,34 @@
-<p align="center">
-    <img src="https://github.com/bregydoc/pigment/raw/master/pigment_logo.png"/> 
-</p>
-
 # Pigment
 
-[![pub package](https://img.shields.io/pub/v/pigment.svg)](https://pub.dartlang.org/packages/pigment)
+[![Build Status](https://travis-ci.org/bregydoc/pigment.svg?branch=master)](https://travis-ci.org/bregydoc/pigment)
 
-A simple but useful plugin for use colors with Flutter
+Useful and simple flutter color handler.
 
-## Features
+## Usage
 
--   You can use string colors (like #01E19F) direct in flutter
--   Pigment extends to Color dar:ui class, then you can use all methods of Color class
--   Pigment 1.0.1 can parse 'rgb()' (e.g. 'rgb(29, 123, 10)').
--   Added CSS colors with default name, you can access from this with CSSColor.\* (e.g. `Pigment.fromCSSColor(CSSColor.lightsalmon)`) or directly with `Pigment.fromString('lightsalmon')`.
+To use this plugin, add `pigment` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
-## Installation
+### Examples
 
-First, add `pigment` as a [dependency in your pubspec.yaml file](https://flutter.io/using-packages/).
-
-## Use
-
-It's very simple, pigment add a new useful method to Color class, this method is `Pigment.fromString()`.
-Also like Color, you can use `new Pigment()`.
-
-<img src="https://github.com/bregydoc/pigment/raw/master/pigment_use.png"/>
+Here are some examples of how to use this library.
 
 ```dart
-Pigment.fromString()
-new Pigment()
+// from a CSS color name
+Pigment.fromString("red")
+// from a hex color
+Pigment.fromString("#ff0000")
+// from a short hex color
+Pigment.fromString("#f00")
+// from a hex color with alpha
+Pigment.fromString("#80ff0000")
+// from an RGB color
+Pigment.fromString("rgb(255,0,0)")
+// from the CSSColor enum
+Pigment.fromCSSColor(CSSColor.red)
 ```
 
-## Example
+## Demo
 
-Here is a small example of the classic and simple pigment use.
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:pigment/pigment.dart';
-
-void main() => runApp(new MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Pigment Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: new MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Pigment App'),
-        ),
-        body: new Center(
-          child: new Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              new Text('Pigment is cool',
-                  style: new TextStyle(color: Pigment.fromString("#FE5567"))),
-              new Text('Pigment is cool',
-                  style: new TextStyle(color: Pigment.fromString("#01E19F"))),
-              new Text('Pigment is cool',
-                  style: new TextStyle(color: Pigment.fromString("#4A48D2"))),
-              new Text('Pigment is cool',
-                  style: new TextStyle(color: Pigment.fromString("rgb(253, 196, 86)"))),
-            ],
-          ),
-        ));
-  }
-}
-```
+| Before | After |
+|---|---|
+| <img src="https://raw.githubusercontent.com/bregydoc/pigment/master/pigment_logo.png" width="250"> | <img src="https://raw.githubusercontent.com/bregydoc/pigment/master/pigment_use.png" width="250"> |
